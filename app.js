@@ -4,7 +4,7 @@ let pembayaranList = JSON.parse(localStorage.getItem('pembayaranList')) || [];
 // Fungsi untuk mengemaskini senarai pembayaran dalam bentuk jadual
 function kemaskiniSenarai() {
     const senaraiPembayaran = document.getElementById("senaraiPembayaran").getElementsByTagName('tbody')[0];
-    senaraiPembayaran.innerHTML = ""; // Kosongkan jadual sebelum menambah semula data
+    senaraiPembayaran.innerHTML = "";
 
     pembayaranList.forEach(pembayaran => {
         const row = senaraiPembayaran.insertRow();
